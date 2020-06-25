@@ -1,0 +1,22 @@
+##### RACE TIME PREDICTOR #####
+
+print(' ')
+print("RACE TIME PREDICTOR")
+LTpace = input("Threshold Pace ")
+distance = float(input("Race Distance Miles "))
+LTpercent = float(input("% of LT "))
+split_pace = LTpace.split(":")
+minutes = int(split_pace[0])
+seconds = int(split_pace[1])
+pace = minutes * 60 + seconds
+racepace = pace * float(LTpercent)
+totaltime = racepace * distance
+
+hours = int(totaltime // 3600)
+timeLeft = totaltime % 3600
+ 
+minutes = int(timeLeft // 60)
+seconds = int(timeLeft % 60)
+
+print(' ')
+print("Race Time" + " = " + str(hours) + ':' + str(minutes) + ':' + str(seconds))
