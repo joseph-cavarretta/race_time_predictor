@@ -1,7 +1,6 @@
 ##### RACE TIME PREDICTOR #####
 
-print(' ')
-print("RACE TIME PREDICTOR")
+print("\nRACE TIME PREDICTOR\n")
 LTpace = input("Threshold Pace ")
 distance = float(input("Race Distance Miles "))
 LTpercent = float(input("% of LT "))
@@ -18,5 +17,4 @@ timeLeft = totaltime % 3600
 minutes = int(timeLeft // 60)
 seconds = int(timeLeft % 60)
 
-print(' ')
 print("Race Time" + " = " + str(hours) + ':' + str(minutes) + ':' + str(seconds))
