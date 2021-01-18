@@ -1,9 +1,9 @@
 ##### RACE TIME PREDICTOR #####
 
 print("\nRACE TIME PREDICTOR\n")
-LTpace = input("Threshold Pace ")
-distance = float(input("Race Distance Miles "))
-LTpercent = float(input("% of LT "))
+LTpace = input("Enter Threshold Pace: ")
+distance = float(input("Enter Race Distance Miles: "))
+LTpercent = float(input("Enter % of LT: "))
 split_pace = LTpace.split(":")
 minutes = int(split_pace[0])
 seconds = int(split_pace[1])
